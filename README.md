@@ -5,8 +5,9 @@
 To run the code, download the datasets into the 'datasets' folder. The internal structure of each dataset should follow the one in datasets/example.
 
 To run the evaluation on this dataset (or on any of the original CycleGAN datasets), please just run
-
-               *python main.py --dataset_dir={{dataset_dir}}*
+```
+python main.py --dataset_dir={{dataset_dir}}
+```
 
 Where {folder_name} is a folder containing a dataset in the format described above. The dog_cat_faces dataset can be downloaded at https://github.com/brownvc/ganimorph
 
