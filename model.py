@@ -289,24 +289,6 @@ class cyclegan(object):
             save_images(fake_B, [self.batch_size, 1],
                         './{}/{}/B_{:02d}_{:04d}_{:02d}.jpg'.format(sample_dir, model_dir, epoch, idx, i+1))
 
-    def sample_modelBackup(self, sample_dir, epoch, idx):
-        dataA = glob('./datasets/{}/*.*'.format(self.dataset_dir + '/testA'))
-        dataB = glob('./datasets/{}/*.*'.format(self.dataset_dir + '/testB'))
-        np.random.shuffle(dataA)
-        np.random.shuffle(dataB)
-        batch_files = list(zip(dataA[:self.batch_size], dataB[:self.batch_size]))
-        sample_images = [load_train_data(batch_file, self.load_size, self.fine_size, is_testing=True) for batch_file in batch_files]
-        sample_images = np.array(sample_images).astype(np.float32)
-
-        fake_A, fake_B = self.sess.run(
-            [self.fake_A, self.fake_B],
-            feed_dict={self.real_data: sample_images}
-        )
-        save_images(fake_A, [self.batch_size, 1],
-                    './{}/A_{:02d}_{:04d}.jpg'.format(sample_dir, epoch, idx))
-        save_images(fake_B, [self.batch_size, 1],
-                    './{}/B_{:02d}_{:04d}.jpg'.format(sample_dir, epoch, idx))
-
     def ensure_dir(self, file_path):
         directory = os.path.dirname(file_path)
         if not os.path.exists(directory):
