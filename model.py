@@ -66,14 +66,12 @@ class cyclegan(object):
 
         self.DB_fake = self.discriminator(self.fake_B, self.options, reuse=False, name="discriminatorB")
         self.DA_fake = self.discriminator(self.fake_A, self.options, reuse=False, name="discriminatorA")
-
-        #great stuffs
+	
         self.DA_fake_classifier = self.discriminator(self.fake_A, self.options, reuse=False, name="discriminatorClassifier")
         self.DB_fake_classifier = self.discriminator(self.fake_B, self.options, reuse=True, name="discriminatorClassifier")
         self.DB_classifier = self.discriminator(self.real_B, self.options, reuse=True, name="discriminatorClassifier")
         self.DA_classifier = self.discriminator(self.real_A, self.options, reuse=True, name="discriminatorClassifier")
-
-        # great stuffs too, second line of g_loss a2b and b2a
+	
         self.g_loss_a2b = \
             + self.adversarial * self.criterionGAN(self.DB_fake, tf.ones_like(self.DB_fake)) \
             + self.hybridness * self.criterionGAN(self.DB_fake_classifier, tf.scalar_mul(self.interpolation_rate, tf.ones_like(self.DB_classifier))) \
@@ -104,7 +102,7 @@ class cyclegan(object):
                                              self.output_c_dim], name='fake_B_sample')
 
 
-        #classifier stuffs!
+        #classifier losses
         self.da_loss_classifier = self.criterionGAN(self.DA_classifier, tf.zeros_like(self.DA_classifier))
         self.db_loss_classifier = self.criterionGAN(self.DB_classifier, tf.ones_like(self.DB_classifier))
         self.d_loss_classifier = (self.da_loss_classifier + self.db_loss_classifier) / 2
