@@ -9,7 +9,7 @@ To run the evaluation on this dataset (or on any of the original CycleGAN datase
 python main.py --dataset_dir={{dataset_dir}}
 ```
 
-Where {folder_name} is a folder containing a dataset in the format described above. The dog_cat_faces dataset can be downloaded at https://github.com/brownvc/ganimorph
+Where {dataset_dir} is a folder containing a dataset in the format described above. The dog_cat_faces dataset can be downloaded at https://github.com/brownvc/ganimorph
 
 
 To reproduce our results on human2cats, add to the command instruction the parameters *--epoch_step=22* and *--epoch=22*.
