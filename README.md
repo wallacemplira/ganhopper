@@ -1,6 +1,12 @@
-## GANHopper: Multi-Hop GAN for Unsupervised Image-to-Image Translation (to be featured at ECCV 2020)
+## GANHopper: Multi-Hop GAN for Unsupervised Image-to-Image Translation
 
 [Link for the paper published on Arxiv](https://arxiv.org/abs/2002.10102)
+
+### News
+
+* Ganhopper will be presented at ECCV 2020.
+
+### Instrunctions
 
 To run the code, download the datasets into the 'datasets' folder. The internal structure of each dataset should follow the one in datasets/example.
 
