@@ -1,4 +1,4 @@
-## GANHopper: Multi-Hop GAN for Unsupervised Image-to-Image Translation
+## GANHopper: Multi-Hop GAN for Unsupervised Image-to-Image Translation (to be featured at ECCV 2020)
 
 [Link for the paper published on Arxiv](https://arxiv.org/abs/2002.10102)
 
