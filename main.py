@@ -1,6 +1,6 @@
 '''
-Anonymous author
-Implementation based on xhujoy's tensorflow CycleGAN, available at https://github.com/xhujoy/CycleGAN-tensorflow 
+@author: Wallace Lira
+Our GANhopper implementation was based on xhujoy's tensorflow CycleGAN repository, available at https://github.com/xhujoy/CycleGAN-tensorflow 
 '''
 
 import argparse
