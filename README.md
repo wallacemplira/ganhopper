@@ -4,7 +4,7 @@
 
 ### News
 
-* GANHopper will be presented at ECCV 2020.
+* GANHopper was presented at ECCV 2020.
 
 ### Instrunctions
 
