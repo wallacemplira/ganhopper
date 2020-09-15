@@ -1,6 +1,7 @@
 ## GANHopper: Multi-Hop GAN for Unsupervised Image-to-Image Translation
 
 [Link for the paper published on Arxiv](https://arxiv.org/abs/2002.10102)
+
 [Link for the 10 minute video presentation from ECCV](https://www.youtube.com/watch?v=jQ-dxwgBm3Q&t=8s&ab_channel=WM)
 
 ### News
