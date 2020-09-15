@@ -17,9 +17,8 @@ python main.py --dataset_dir={{dataset_dir}}
 
 Where {dataset_dir} is a folder containing a dataset in the format described above. The dog_cat_faces dataset can be downloaded at https://github.com/brownvc/ganimorph
 
-
-To reproduce our results on human2cats, add to the command instruction the parameters *--epoch_step=22* and *--epoch=22*.
-Similarly, to reproduce our results on human2dolls, add to the command instruction the parameters *--epoch_step=25* and *--epoch=25*. Finally, for the font2font dataset, set *--epoch_step=1000* and *--epoch=1000*.
+To reproduce the results from the dog_cat_faces dataset please use the default parameters. To reproduce our results on human2cats, add to the command instruction the parameters *--epoch_step=22* and *--epoch=22*.
+Similarly, to reproduce our results on human2dolls, add to the command instruction the parameters *--epoch_step=25* and *--epoch=25*.
 
 
 The objective function parameters can be controlled with can be set with the following arguments:
