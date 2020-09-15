@@ -25,10 +25,15 @@ Similarly, to reproduce our results on human2dolls, add to the command instructi
 
 
 The objective function parameters can be controlled with can be set with the following arguments:
+
                --hybridness: weight of the hybridness loss
+               
                --h_hops: total number of translation hops between two domains
+               
                --smootheness: weight of the smootheness loss
+               
                --L1_lambda: weight on reconstruction loss term between hops in objective
+               
                --adversarial: weight of the adversarial loss
 
 ### Dependencies
