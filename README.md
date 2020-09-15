@@ -28,8 +28,6 @@ The objective function parameters can be controlled with can be set with the fol
                --L1_lambda: weight on reconstruction loss term between hops in objective
                --adversarial: weight of the adversarial loss
 
-However, the experiments mentioned above use the default values for all hyperparameters.
-
 ### Dependencies
 ```
 tensorflow-gpu=1.9.0
